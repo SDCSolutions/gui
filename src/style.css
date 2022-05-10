@@ -1,14 +1,14 @@
 body {
-  background-color:#fff;
+  background-color:#000;
   font-family:sans-serif;
-  color: #333333;
+  color: #aaa;
   font: 14px Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
 #page {
   margin: 20px;
-  background-color: #ffffff;
+  background-color: #000;
 }
 
 iframe {
@@ -29,7 +29,7 @@ th {
 
 td {
   color: #777777;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #ffffff;
   padding: 8px;
 }
 
@@ -42,7 +42,7 @@ tr:nth-child(2n+2) {
 }
 
 .wifiselected td {
-  background-color: teal;
+  background-color: #1db578;
   color: white;
 }
 
@@ -52,7 +52,7 @@ tr:nth-child(2n+2) {
 
 .header h1 {
   padding-bottom: 0.3em;
-  color: #008080;
+  color: #1db578;
   font-size: 45px;
   font-weight: normal;
   font-family: Garmond,"sans-serif";
@@ -86,7 +86,7 @@ h2 {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 1em 1em 1em 1em;
-  box-shadow: 1px 7px 7px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 7px 7px 1px rgba(255, 255, 255, 0.4);
   background: #ffffff;
   margin-bottom: 20px;
 }
@@ -165,7 +165,7 @@ h2 {
 }
 
 button {
-  background-color: #008080;
+  background-color: #1db578;
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
   border: none;
@@ -197,9 +197,9 @@ input[type="file"],
 input[type="time"],
 input[type="date"],
 select {
-  box-sizing: border-box;
+  box-sizing: content-box;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 0px;
   margin-top: 10px;
   width: 100%;
   padding:5px;
@@ -282,7 +282,7 @@ input[type="time"] {
 }
 
 .tabs label {
-  background: #008080;
+  background: #000;
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -298,13 +298,13 @@ input[type="time"] {
 }
 
 .tabs input:hover + label {
-  background: #e1e1e1;
-  color: #000;
+  background: #000;
+  color: #1db578;
 }
 
 .tabs input:checked + label {
-  background: #f1f1f1;
-  color: #000;
+  background: #000;
+  color: #1db578;
 }
 
 #content {
@@ -413,11 +413,11 @@ span.ok {
 }
 
 input:checked + .slider {
-  background-color: #008080;
+  background-color: #1db578;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #008080;
+  box-shadow: 0 0 1px #1db578;
 }
 
 input:checked + .slider:before {
@@ -436,7 +436,7 @@ input:checked + .slider:before {
 }
 
 .info {
-  background-color: #008080;
+  background-color: #1db578;
   border-radius: 100%;
   color: #ffffff;
   display: inline-block;
@@ -458,12 +458,12 @@ input:checked + .slider:before {
 button>span.info
 {
   background-color: #ffffff;
-  color: #008080;
+  color: #1db578;
 }
 
 span.selected
 {
-  color: #008080;
+  color: #1db578;
 }
 
 .ready {
@@ -529,7 +529,7 @@ border: none;
 #progressBar {
   width: 1%;
   height: 30px;
-  background-color: #008080;
+  background-color: #1db578;
 }
 
 #wifiList {
@@ -561,8 +561,8 @@ border: none;
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: teal;
-    border-color: teal;
+    background-color: #1db578;
+    border-color: #1db578;
 }
 
 .list-group-item:first-child {
@@ -631,7 +631,7 @@ border: none;
   appearance: none;
   width: 12px;
   height: 27px;
-  background: #008080;
+  background: #1db578;
   cursor: pointer;
   border-radius: 4px;
   padding: 4px;
@@ -640,7 +640,7 @@ border: none;
 .rangeslider::-moz-range-thumb {
   width: 12px;
   height: 27px;
-  background: #008080;
+  background: #1db578;
   cursor: pointer;
   border-radius: 4px;
   padding: 4px;

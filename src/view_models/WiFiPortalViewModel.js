@@ -6,7 +6,7 @@ function WiFiPortalViewModel(baseHost, basePort)
   "use strict";
   var self = this;
 
-  self.baseHost = ko.observable("" !== baseHost ? baseHost : "openevse.local");
+  self.baseHost = ko.observable("" !== baseHost ? baseHost : "kigtinc.local");
   self.basePort = ko.observable(basePort);
   self.baseEndpoint = ko.pureComputed(function () {
     var endpoint = "//" + self.baseHost();

@@ -6,7 +6,7 @@ function OpenEvseWiFiViewModel(baseHost, basePort, baseProtocol)
   "use strict";
   var self = this;
 
-  self.baseHost = ko.observable("" !== baseHost ? baseHost : "openevse.local");
+  self.baseHost = ko.observable("" !== baseHost ? baseHost : "kigtinc.local");
   self.basePort = ko.observable(basePort);
   self.baseProtocol = ko.observable(baseProtocol);
 
@@ -28,6 +28,7 @@ function OpenEvseWiFiViewModel(baseHost, basePort, baseProtocol)
   self.schedule = new ScheduleViewModel(self.baseEndpoint);
   self.vehicle = new VehicleViewModel(self.baseEndpoint, self.config, self.status);
   self.logs = new EventLogViewModel(self.baseEndpoint);
+  self.chargecloud = new ChargeCloudCommunications(self.baseEndpoint);
 
   self.initialised = ko.observable(false);
   self.updating = ko.observable(false);
@@ -835,7 +836,7 @@ function OpenEvseWiFiViewModel(baseHost, basePort, baseProtocol)
   self.restartFetching = ko.observable(false);
   self.restartSuccess = ko.observable(false);
   self.restart = function() {
-    if (confirm("Restart OpenEVSE WiFi? Current config will be saved, takes approximately 10s.")) {
+    if (confirm("Restart KIGT Mini S2 WiFi? Current config will be saved, takes approximately 10s.")) {
       self.restartFetching(true);
       self.restartSuccess(false);
       $.post(self.baseEndpoint() + "/restart", { }, function () {
