@@ -28,7 +28,7 @@ function OpenEvseWiFiViewModel(baseHost, basePort, baseProtocol)
   self.schedule = new ScheduleViewModel(self.baseEndpoint);
   self.vehicle = new VehicleViewModel(self.baseEndpoint, self.config, self.status);
   self.logs = new EventLogViewModel(self.baseEndpoint);
-  self.chargecloud = new ChargeCloudCommunications(self.baseEndpoint);
+  //self.chargecloud = new ChargeCloudCommunications(self.baseEndpoint);
 
   self.initialised = ko.observable(false);
   self.updating = ko.observable(false);
